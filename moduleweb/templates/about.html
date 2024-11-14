@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos du Chatbot</title>
+
+    <!-- Lien vers le CSS Bootstrap -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Lien vers le fichier CSS personnalisé -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <!-- Lien vers le fichier CSS personnalisé -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mon Chatbot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/chatbot">Chatbot</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">À propos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- En-tête visuelle -->
+    <header id="header">
+        <div class="container">
+            <h1>À propos du Chatbot K-ARL</h1>
+            <p>Découvrez comment K-ARL facilite les interactions intelligentes et fluides grâce à l'IA.</p>
+            <a href="/chatbot" class="btn btn-custom mt-4">Essayez le Chatbot</a>
+        </div>
+    </header>
+
+    <!-- Section "À propos" -->
+    <div class="about-section container mt-5">
+        <h2>Notre mission</h2>
+        <p>
+            Le <strong>Chatbot K-ARL</strong> est conçu pour améliorer les interactions automatisées entre les stagiaires de l'entreprise Boost Company Inc avec un système intélligent afin de rendre plus efficace la prise d'informations concernant l'entreprise
+            en utilisant l'intelligence artificielle avancée. Avec K-ARL, nous visons à offrir une expérience utilisateur fluide et efficace,
+            tout en réduisant les coûts opérationnels des entreprises qui seront également intéressées.
+        </p>
+
+        <!-- Cartes de fonctionnalités -->
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Intelligence Artificielle</h5>
+                        <p class="card-text">Utilise le NLP pour comprendre et traiter les requêtes des utilisateurs en langage naturel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Réponses Contextuelles</h5>
+                        <p class="card-text">Offre des réponses précises et pertinentes en fonction du contexte de la conversation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Intégrations API</h5>
+                        <p class="card-text">Peut s'intégrer à divers services externes pour enrichir l'expérience utilisateur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+
+</body>
+
+</html>
