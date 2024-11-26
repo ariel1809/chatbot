@@ -28,4 +28,4 @@ USER appuser
 EXPOSE 5000
 
 # Commande pour exécuter l'application
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "main:app"]
