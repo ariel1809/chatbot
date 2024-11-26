@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify
+import json
 import pickle
 import random
-import json
 
 # Charger le modèle et l'encodeur de labels
 with open('chatbot_model.pkl', 'rb') as f:

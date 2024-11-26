@@ -5,7 +5,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.10 (enronmails)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (scrap_web)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
     <orderEntry type="library" name="@popperjs/core" level="application" />
